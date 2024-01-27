@@ -1,0 +1,153 @@
+.container {
+  max-width: 960px;
+}
+
+/* nav */
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20x;
+  padding: 15px; 
+  width: 700px;
+  height: 80px;
+  background-color: #222;
+  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.5  );
+  border-radius: 20px ;
+}
+
+.brand {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.5em;
+  padding: 15px;
+  text-transform: capitalize;
+}
+.Fname {
+  color: white;
+  font-weight: 720;
+}
+
+.Lname{
+  color: crimson;
+  font-weight: 400px;
+  padding-left: 4px;
+}
+
+.Navigation{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Navigation>li {
+  list-style-type: none;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Navigation>li>a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.Navigation>li>a:hover {
+  color: crimson;
+  transition:  all .4s ease-in-out;
+}
+
+.Navigation > li > img {
+  width: 45px;
+  height: 65px;
+  border-radius: 0 0 20px 20px;
+}
+.active {
+  background-color: #181818;
+  border-radius: 0 0 20px 20px;
+  color: white;
+  padding: 15px;
+}
+
+.active 
+
+/* end nav */
+
+
+/*
+ * Custom translucent site header
+ */
+
+.site-header {
+  background-color: rgba(0, 0, 0, .85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  height: 70px;
+  backdrop-filter: saturate(180%) blur(20px);
+}
+.site-header a {
+  color: whitesmoke;
+  transition: color .15s ease-in-out;
+  text-decoration: none;
+}
+.site-header a:hover {
+  color: red;
+  text-decoration: none;
+}
+
+/*
+ * Dummy devices (replace them with your own or something else entirely!)
+ */
+
+.product-device {
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+  width: 250px;
+  height: 350px;
+  border-radius: 21px;
+  border-radius: 0;
+  box-shadow: 0;
+}
+
+.product-device::before {
+  position: center;
+  top: 15%;
+  right: 45%;
+  bottom: 15%;
+  left: 20px;
+  background-color: cadetblue;
+  border-radius: 10px;
+}
+
+
+.product-device-2 {
+  position: absolute;
+  right: 70%;
+  bottom: 10%;
+  width: 250px;
+  height: 350px;
+  border-radius: 21px;
+  border-radius: 0;
+  box-shadow: 0;
+}
+
+.class a {
+  height: 100px;
+}
+
+/*
+ * Extra utilities
+ */
+
+.flex-equal > * {
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    flex: 1;
+  }
+}
